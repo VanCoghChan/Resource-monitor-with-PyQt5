@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icons/cpu.png</file>
+    <file>icons/cpu.png</file>
+    <file>icons/cpu.png</file>
+    <file>icons/gpu.png</file>
+    <file>4.png</file>
+    <file>3.png</file>
+    <file>2.png</file>
+    <file>1.png</file>
+    <file>cpu.png</file>
+    <file>cpu.png</file>
+    <file>CPU.png</file>
+    <file>圆形.png</file>
+  </qresource>
+</RCC>
