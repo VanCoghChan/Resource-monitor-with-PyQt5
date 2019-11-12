@@ -3,5 +3,5 @@
 ## 进入runFile文件夹，在此文件夹下运行CChan.py
 ### 大致效果如下
 
-![](https://github.com/VanCoghChan/Resource-monitor-with-PyQt5/blob/master/README_image/sample.PNG)
+![image](https://github.com/VanCoghChan/Resource-monitor-with-PyQt5/blob/master/README_image/sample.PNG)
 
