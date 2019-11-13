@@ -106,6 +106,29 @@ class mywindow(Ui_MainWindow, QMainWindow):
         view4.setRenderHint(QPainter.Antialiasing)  # 抗锯齿
         self.verticalLayout_4.addWidget(view4)
 
+        
+    def mousePressEvent(self, event):
+        if event.button() == QtCore.Qt.LeftButton:
+            self.m_flag = True
+            self.m_Position = event.globalPos() - self.pos()  #获取鼠标相对窗口的位置
+            event.accept()
+            self.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))  #更改鼠标图标
+
+    def mouseMoveEvent(self, QMouseEvent):
+        try:
+            if QtCore.Qt.LeftButton and self.m_flag:
+                self.move(QMouseEvent.globalPos() - self.m_Position)  #更改c窗口位置
+                QMouseEvent.accept()
+        except:
+            pass
+
+    def mouseReleaseEvent(self, QMouseEvent):
+        self.m_flag = False
+        self.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+
+
+    
+
 
 
 if __name__ == '__main__':
